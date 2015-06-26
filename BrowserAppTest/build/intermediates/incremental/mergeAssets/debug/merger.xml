@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/home/pcheng/.jenkins/jobs/Test/MyApplication/BrowserAppTest/src/main/assets"/></dataSet><dataSet config="debug"><source path="/home/pcheng/.jenkins/jobs/Test/MyApplication/BrowserAppTest/src/debug/assets"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="/home/pcheng/Tests/LightningTests/BrowserAppTest/src/main/assets"/></dataSet><dataSet config="debug"><source path="/home/pcheng/Tests/LightningTests/BrowserAppTest/src/debug/assets"/></dataSet></merger>

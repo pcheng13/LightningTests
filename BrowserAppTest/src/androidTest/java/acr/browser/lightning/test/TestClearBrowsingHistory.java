@@ -54,7 +54,7 @@ public class TestClearBrowsingHistory extends ActivityInstrumentationTestCase2 {
         //Click on ImageView
         solo.clickOnView(solo.getView(android.widget.ImageView.class, 0));
         //Click on History
-        solo.clickInList(4, 0);
+        solo.clickOnText("History");
         solo.sleep(1000);
 
         assertTrue(solo.searchText("https://www.baidu.com/"));
@@ -63,10 +63,11 @@ public class TestClearBrowsingHistory extends ActivityInstrumentationTestCase2 {
         solo.clickOnView(solo.getView(android.widget.ImageView.class, 0));
         //Click on Settings
         assertTrue(solo.searchText("Settings"));
-        solo.clickInList(10, 0);
+        solo.clickOnText("Settings");
         //click on Privacy Settings
         assertTrue(solo.searchText("Privacy Settings"));
-        solo.clickOnView(solo.getView("textView9"));
+        //solo.clickOnView(solo.getView("textView9"));
+        solo.clickOnText("Privacy Settings");
         //click on Clear history
         assertTrue(solo.searchText("Clear history"));
         solo.clickOnView(solo.getView("rClearHistory"));
