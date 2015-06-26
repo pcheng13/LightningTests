@@ -1,0 +1,46 @@
+-- Merging decision tree log ---
+manifest
+ADDED from AndroidManifest.xml:1:55
+	package
+		ADDED from AndroidManifest.xml:1:174
+	android:versionName
+		ADDED from AndroidManifest.xml:1:148
+	android:versionCode
+		ADDED from AndroidManifest.xml:1:124
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+	xmlns:android
+		ADDED from AndroidManifest.xml:1:65
+application
+ADDED from AndroidManifest.xml:2:5
+	android:label
+		ADDED from AndroidManifest.xml:2:55
+	android:icon
+		ADDED from AndroidManifest.xml:2:18
+activity#acr.browser.lightning.MainActivity
+ADDED from AndroidManifest.xml:3:9
+	android:label
+		ADDED from AndroidManifest.xml:3:19
+	android:name
+		ADDED from AndroidManifest.xml:3:52
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:4:13
+action#android.intent.action.MAIN
+ADDED from AndroidManifest.xml:5:17
+	android:name
+		ADDED from AndroidManifest.xml:5:25
+category#android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:6:17
+	android:name
+		ADDED from AndroidManifest.xml:6:27
+instrumentation#android.test.InstrumentationTestRunner
+ADDED from AndroidManifest.xml:10:1
+	android:targetPackage
+		ADDED from AndroidManifest.xml:10:72
+	android:name
+		ADDED from AndroidManifest.xml:10:18
+uses-sdk
+INJECTED from AndroidManifest.xml:0:0 reason: use-sdk injection requested
+	android:minSdkVersion
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
