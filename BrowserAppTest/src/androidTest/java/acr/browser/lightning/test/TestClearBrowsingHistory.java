@@ -51,6 +51,7 @@ public class TestClearBrowsingHistory extends ActivityInstrumentationTestCase2 {
         solo.pressSoftKeyboardSearchButton();
         // .pressSoftKeyboardNextButton();
         solo.sleep(3000);
+
         Spoon.screenshot(solo.getCurrentActivity(),"SearchPage");
 
         //Click on ImageView

@@ -2,18 +2,25 @@
 <items version="2" >
 
     <item
-        jar="/home/pcheng/Tests/LightningTests/BrowserAppTest/libs/robotium-solo-5.4.1.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="690df75bb6608abcb538cde51e4a12f6f4b7819b">
-        <dex dex="/home/pcheng/Tests/LightningTests/BrowserAppTest/build/intermediates/pre-dexed/androidTest/debug/robotium-solo-5.4.1-d0a3bcfc48e6911e26db89be591e7558cd218140.jar" />
-    </item>
-    <item
         jar="/home/pcheng/.jenkins/jobs/Test/MyApplication/BrowserAppTest/libs/robotium-solo-5.4.1.jar"
         jumboMode="false"
         revision="20.0.0"
         sha1="690df75bb6608abcb538cde51e4a12f6f4b7819b">
         <dex dex="/home/pcheng/.jenkins/jobs/Test/MyApplication/BrowserAppTest/build/intermediates/pre-dexed/androidTest/debug/robotium-solo-5.4.1-50b8d6fb17391a8f557529ab84aa417243cda317.jar" />
+    </item>
+    <item
+        jar="/home/pcheng/Tests/LightningTests/BrowserAppTest/libs/spoon-client-1.1.9.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="1adb65d40c680ee8f7fe473292b43c213605735a">
+        <dex dex="/home/pcheng/Tests/LightningTests/BrowserAppTest/build/intermediates/pre-dexed/androidTest/debug/spoon-client-1.1.9-fe6ff7b4b7c8044a5ab6c51aa320eec57cb58e3d.jar" />
+    </item>
+    <item
+        jar="/home/pcheng/Tests/LightningTests/BrowserAppTest/libs/robotium-solo-5.4.1.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="690df75bb6608abcb538cde51e4a12f6f4b7819b">
+        <dex dex="/home/pcheng/Tests/LightningTests/BrowserAppTest/build/intermediates/pre-dexed/androidTest/debug/robotium-solo-5.4.1-d0a3bcfc48e6911e26db89be591e7558cd218140.jar" />
     </item>
 
 </items>
