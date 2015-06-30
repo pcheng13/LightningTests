@@ -40,7 +40,6 @@ public class TestClearBrowsingHistory extends ActivityInstrumentationTestCase2 {
     }
 
     public void takeScreenshot(String imageName){
-        this.getInstrumentation().waitForIdleSync();
         Spoon.screenshot(solo.getCurrentActivity(), imageName);
     }
 
