@@ -37,7 +37,7 @@ public class test01 extends ActivityInstrumentationTestCase2 {
   	}
   
 	public void testRun() {
-		/**
+
         //Wait for activity: 'acr.browser.lightning.MainActivity'
 		solo.waitForActivity("MainActivity", 2000);
         //Click on inner
@@ -213,6 +213,6 @@ public class test01 extends ActivityInstrumentationTestCase2 {
 		solo.enterText((android.widget.EditText) solo.getView("search"), "http://twitter.com/RestainoAnthony");
         //Press menu back key
 		solo.goBack();
-		 **/
+
 	}
 }
