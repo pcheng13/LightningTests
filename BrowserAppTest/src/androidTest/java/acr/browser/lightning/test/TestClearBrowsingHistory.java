@@ -53,12 +53,11 @@ public class TestClearBrowsingHistory extends ActivityInstrumentationTestCase2 {
         //Press next button
         solo.pressSoftKeyboardSearchButton();
         // .pressSoftKeyboardNextButton();
-        solo.sleep(3000);
         //Click on ImageView
         solo.clickOnView(solo.getView(android.widget.ImageView.class, 0));
         //Click on History
         solo.clickOnText("History");
-        solo.sleep(3000);
+        solo.sleep(5000);
 
         this.takeScreenshot("beforeclear");
         assertTrue(solo.searchText("https://www.baidu.com/"));
@@ -66,6 +65,7 @@ public class TestClearBrowsingHistory extends ActivityInstrumentationTestCase2 {
         //Click on ImageView
         solo.clickOnView(solo.getView(android.widget.ImageView.class, 0));
         //Click on Settings
+        solo.sleep(5000);
         this.takeScreenshot("Settings");
         assertTrue(solo.searchText("Settings"));
 
@@ -91,7 +91,7 @@ public class TestClearBrowsingHistory extends ActivityInstrumentationTestCase2 {
         solo.clickOnView(solo.getView(android.widget.ImageView.class, 0));
         //Click on History
         solo.clickInList(4, 0);
-        solo.sleep(1000);
+        solo.sleep(5000);
         this.takeScreenshot("afterclear");
         assertFalse(solo.searchText("https://www.baidu.com/"));
 
