@@ -42,6 +42,7 @@ public class TestClearBrowsingHistory extends ActivityInstrumentationTestCase2 {
     public void testRun() {
         //Wait for activity: 'acr.browser.lightning.MainActivity'
         solo.waitForActivity("MainActivity", 2000);
+        Spoon.screenshot(solo.getCurrentActivity(), "startpage");
 
         solo.clickOnView(solo.getView("search"));
         //Enter the text: 'baidu.com'
@@ -51,14 +52,13 @@ public class TestClearBrowsingHistory extends ActivityInstrumentationTestCase2 {
         solo.pressSoftKeyboardSearchButton();
         // .pressSoftKeyboardNextButton();
         solo.sleep(3000);
-
-        Spoon.screenshot(solo.getCurrentActivity(),"SearchPage");
+        Spoon.screenshot(solo.getCurrentActivity(), "SearchPage");
 
         //Click on ImageView
         solo.clickOnView(solo.getView(android.widget.ImageView.class, 0));
         //Click on History
         solo.clickOnText("History");
-        solo.sleep(1000);
+        solo.sleep(3000);
         Spoon.screenshot(solo.getCurrentActivity(), "History_beforeclear");
         assertTrue(solo.searchText("https://www.baidu.com/"));
 
@@ -89,8 +89,9 @@ public class TestClearBrowsingHistory extends ActivityInstrumentationTestCase2 {
         //Click on History
         solo.clickInList(4, 0);
         solo.sleep(1000);
-        assertFalse(solo.searchText("https://www.baidu.com/"));
         Spoon.screenshot(solo.getCurrentActivity(), "History_afterclear");
+        assertFalse(solo.searchText("https://www.baidu.com/"));
+
     }
 
 }
