@@ -46,9 +46,6 @@ public class TestClearBrowsingHistory extends ActivityInstrumentationTestCase2 {
     public void testRun() {
         //Wait for activity: 'acr.browser.lightning.MainActivity'
         solo.waitForActivity("MainActivity", 2000);
-
-        this.takeScreenshot("startpage");
-
         solo.clickOnView(solo.getView("search"));
         //Enter the text: 'baidu.com'
         solo.clearEditText((android.widget.EditText) solo.getView("search"));
