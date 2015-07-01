@@ -35,7 +35,12 @@ public class TestClearBrowsingHistory extends ActivityInstrumentationTestCase2 {
 
     @Override
     public void tearDown() throws Exception {
-        solo.finishOpenedActivities();
+        try {
+            solo.finalize();
+        } catch (Throwable e) {
+            e.printStackTrace();
+        }
+        getActivity().finish();
         super.tearDown();
     }
 
@@ -86,7 +91,6 @@ public class TestClearBrowsingHistory extends ActivityInstrumentationTestCase2 {
         solo.clickOnView(solo.getView(android.widget.ImageView.class, 0));
         //Click on backward arrow
         solo.clickOnView(solo.getView(android.widget.ImageView.class, 0));
-
         //Click on ImageView
         solo.clickOnView(solo.getView(android.widget.ImageView.class, 0));
         //Click on History

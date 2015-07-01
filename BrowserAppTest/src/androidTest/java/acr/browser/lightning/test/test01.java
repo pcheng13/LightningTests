@@ -32,8 +32,13 @@ public class test01 extends ActivityInstrumentationTestCase2 {
   
    	@Override
    	public void tearDown() throws Exception {
-        solo.finishOpenedActivities();
-        super.tearDown();
+		try {
+			solo.finalize();
+		} catch (Throwable e) {
+			e.printStackTrace();
+		}
+		getActivity().finish();
+		super.tearDown();
   	}
   
 	public void testRun() {
