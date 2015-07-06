@@ -19,7 +19,7 @@ public class test01 extends ActivityInstrumentationTestCase2 {
         }
     }
   	
-  	@SuppressWarnings("unchecked")
+
     public test01() throws ClassNotFoundException {
         super(launcherActivityClass);
     }
@@ -40,7 +40,7 @@ public class test01 extends ActivityInstrumentationTestCase2 {
 		getActivity().finish();
 		super.tearDown();
   	}
-  
+
 	public void testRun() {
 
         //Wait for activity: 'acr.browser.lightning.MainActivity'

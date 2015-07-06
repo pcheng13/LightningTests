@@ -56,7 +56,7 @@ android {
 task assembleDebug(overwrite: true) {}
 
 task copyTask(type: Copy) {
-    from '/home/pcheng/Downloads/Lightning-Browser-Plus_debug.apk'
+    from '/home/pcheng/.jenkins/jobs/LighteningBuild/workspace/app/build/outputs/apk/app-debug-unaligned.apk'
     into 'build/outputs/apk/'
     rename {
         'BrowserAppTest-debug.apk'
