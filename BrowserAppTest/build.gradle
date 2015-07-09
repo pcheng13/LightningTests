@@ -19,9 +19,8 @@ repositories {
 }
 
 dependencies {
-    compile files('libs/spoon-client-1.1.9.jar')
     androidTestCompile fileTree(include: 'robotium-solo-5.4.1.jar', dir: 'libs')
-    androidTestCompile fileTree(include: 'spoon-client-1.1.9.jar', dir: 'libs')
+    androidTestCompile fileTree(include: 'spoon-client-1.1.10.jar', dir: 'libs')
     compile files('libs/spoon-client-1.1.10.jar')
 }
 
