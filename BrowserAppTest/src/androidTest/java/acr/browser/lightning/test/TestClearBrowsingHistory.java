@@ -54,6 +54,7 @@ public class TestClearBrowsingHistory extends ActivityInstrumentationTestCase2 {
     public void testRun() {
         //Wait for activity: 'acr.browser.lightning.MainActivity'
         solo.waitForActivity("MainActivity", 2000);
+        takeScreenshot("init");
         solo.clickOnView(solo.getView("search"));
         //Enter the text: 'baidu.com'
         solo.clearEditText((android.widget.EditText) solo.getView("search"));
@@ -61,20 +62,17 @@ public class TestClearBrowsingHistory extends ActivityInstrumentationTestCase2 {
         //Press next button
         solo.pressSoftKeyboardSearchButton();
         // .pressSoftKeyboardNextButton();
+        takeScreenshot("load_baidu");
         //Click on ImageView
         solo.clickOnView(solo.getView(android.widget.ImageView.class, 0));
         //Click on History
         solo.clickOnText("History");
-
-        takeScreenshot("beforeclear");
+        takeScreenshot("history_beforeclear");
         assertTrue(solo.searchText("https://www.baidu.com/"));
-
         //Click on ImageView
         solo.clickOnView(solo.getView(android.widget.ImageView.class, 0));
         //Click on Settings
-        takeScreenshot("Settings");
         assertTrue(solo.searchText("Settings"));
-
         solo.clickOnText("Settings");
         //click on Privacy Settings
         assertTrue(solo.searchText("Privacy Settings"));
@@ -96,7 +94,7 @@ public class TestClearBrowsingHistory extends ActivityInstrumentationTestCase2 {
         solo.clickOnView(solo.getView(android.widget.ImageView.class, 0));
         //Click on History
         solo.clickInList(4, 0);
-        takeScreenshot("afterclear");
+        takeScreenshot("History_afterclear");
         assertFalse(solo.searchText("https://www.baidu.com/"));
 
     }
