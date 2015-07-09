@@ -46,7 +46,8 @@ public class TestClearBrowsingHistory extends ActivityInstrumentationTestCase2 {
 
     private void takeScreenshot(String imageName){
         solo.sleep(5000);
-        Spoon.screenshot(solo.getCurrentActivity(), imageName);
+        //Spoon.screenshot(solo.getCurrentActivity(), imageName);
+        Spoon.screenshot(solo.getCurrentActivity(), imageName,this.getName(),"testRun");
         solo.sleep(5000);
     }
 
