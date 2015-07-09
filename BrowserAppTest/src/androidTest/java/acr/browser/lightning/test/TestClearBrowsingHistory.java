@@ -44,7 +44,7 @@ public class TestClearBrowsingHistory extends ActivityInstrumentationTestCase2 {
         super.tearDown();
     }
 
-    public void takeScreenshot(String imageName){
+    private void takeScreenshot(String imageName){
         Spoon.screenshot(solo.getCurrentActivity(), imageName);
     }
 
@@ -64,14 +64,14 @@ public class TestClearBrowsingHistory extends ActivityInstrumentationTestCase2 {
         solo.clickOnText("History");
         solo.sleep(5000);
 
-        this.takeScreenshot("beforeclear");
+        takeScreenshot("beforeclear");
         assertTrue(solo.searchText("https://www.baidu.com/"));
 
         //Click on ImageView
         solo.clickOnView(solo.getView(android.widget.ImageView.class, 0));
         //Click on Settings
         solo.sleep(5000);
-        this.takeScreenshot("Settings");
+        takeScreenshot("Settings");
         assertTrue(solo.searchText("Settings"));
 
         solo.clickOnText("Settings");
@@ -96,7 +96,7 @@ public class TestClearBrowsingHistory extends ActivityInstrumentationTestCase2 {
         //Click on History
         solo.clickInList(4, 0);
         solo.sleep(5000);
-        this.takeScreenshot("afterclear");
+        takeScreenshot("afterclear");
         assertFalse(solo.searchText("https://www.baidu.com/"));
 
     }
